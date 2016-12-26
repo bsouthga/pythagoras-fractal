@@ -1,0 +1,22 @@
+{
+  "name": "pythagoras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsouthga/pythagoras-fractal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsouthga/pythagoras-fractal/issues"
+  },
+  "homepage": "https://github.com/bsouthga/pythagoras-fractal#readme",
+  "devDependencies": {
+    "html-minifier": "^3.2.3"
+  }
+}

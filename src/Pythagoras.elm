@@ -11,6 +11,13 @@ type alias PythagorasArgs =
     ( Float, Float, Float, Float, Float, Bool, Bool, Float, Float )
 
 
+rectColor : String
+rectColor = "#4DA6C2"
+
+borderColor : String
+borderColor = "#C2694D"
+
+
 baseWidth : Float
 baseWidth =
     80
@@ -18,7 +25,7 @@ baseWidth =
 
 realMax : Float
 realMax =
-    10
+    11
 
 
 degrees : Float -> Float
@@ -107,7 +114,7 @@ pythagoras ( w, xpos, ypos, heightFactor, lean, left, right, lvl, maxlvl ) =
                 ( nextRight, w - nextRight, -nextRight, heightFactor, lean, False, True, lvl + 1, maxlvl )
         in
             g [ transform ("translate(" ++ (toString xpos) ++ " " ++ (toString ypos) ++ ") " ++ rotation) ]
-                [ rect [ stroke "orange", fill "blue", x (toString 0), y (toString 0), width (toString w), height (toString w) ] []
+                [ rect [ stroke borderColor, fill rectColor, x (toString 0), y (toString 0), width (toString w), height (toString w) ] []
                 , pythagoras leftArgs
                 , pythagoras rightArgs
                 ]
