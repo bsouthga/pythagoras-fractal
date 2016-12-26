@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "elm-make ./src/Main.elm --output main.html",
+    "min": "mkdir -p dist && html-minifier ./main.html --minify-js > ./dist/index.html",
+    "gh-pages": "gh-pages -d ./dist/",
+    "deploy": "npm run build && npm run min && npm run gh-pages"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/bsouthga/pythagoras-fractal#readme",
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "html-minifier": "^3.2.3"
   }
 }
