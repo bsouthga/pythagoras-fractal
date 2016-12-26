@@ -4,8 +4,8 @@ import Svg exposing (Svg, g, rect)
 import Svg.Attributes exposing (transform, fill, stroke, x, y, width, height)
 import Visualization.Scale exposing (linear, convert)
 import Basics exposing (sqrt, atan, pi)
-
 import Controller exposing (Msg)
+
 
 type alias PythagorasArgs =
     ( Float, Float, Float, Float, Float, Bool, Bool, Float, Float )
@@ -24,7 +24,6 @@ realMax =
 degrees : Float -> Float
 degrees r =
     r * (180 / pi)
-
 
 
 baseArgs : ( Float, Float, Float, Float ) -> PythagorasArgs

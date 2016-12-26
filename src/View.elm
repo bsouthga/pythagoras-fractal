@@ -3,15 +3,18 @@ module View exposing (view)
 import Html exposing (Html, div)
 import Svg exposing (svg)
 import Svg.Attributes exposing (width, height, style)
-
 import Controller exposing (Msg, Model)
 import Pythagoras exposing (pythagoras, baseArgs)
 
+
 svgWidth : number
-svgWidth = 1280
+svgWidth =
+    1280
+
 
 svgHeight : number
-svgHeight = 600
+svgHeight =
+    600
 
 
 view : Model -> Html Msg
