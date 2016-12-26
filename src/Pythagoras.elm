@@ -12,10 +12,13 @@ type alias PythagorasArgs =
 
 
 rectColor : String
-rectColor = "#4DA6C2"
+rectColor =
+    "#4DA6C2"
+
 
 borderColor : String
-borderColor = "#C2694D"
+borderColor =
+    "#C2694D"
 
 
 baseWidth : Float
